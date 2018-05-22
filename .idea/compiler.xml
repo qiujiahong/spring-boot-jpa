@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jpa-1" />
+        <module name="jpa-one-to-one" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jpa-1" target="1.8" />
+      <module name="jpa-one-to-one" target="1.8" />
       <module name="springboot-jpa" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jpa-1/jpa-1.iml" filepath="$PROJECT_DIR$/jpa-1/jpa-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-one-to-one/jpa-one-to-one.iml" filepath="$PROJECT_DIR$/jpa-one-to-one/jpa-one-to-one.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-jpa.iml" filepath="$PROJECT_DIR$/.idea/springboot-jpa.iml" />
     </modules>
   </component>
