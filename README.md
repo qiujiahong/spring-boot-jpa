@@ -13,7 +13,7 @@
 |2|jpa-one-to-one|jpa one to one 的使用方法|
 |2|jpa-one-to-many||
 |2|jpa-many-to-one||
-|2|jpa-many-to-many||
+|2|jpa-many-to-many|jpa many to many工程的使用|
 
 
 ## one to one
