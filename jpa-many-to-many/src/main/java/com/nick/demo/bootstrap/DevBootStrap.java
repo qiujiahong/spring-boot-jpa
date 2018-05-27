@@ -53,6 +53,5 @@ public class DevBootStrap implements ApplicationListener<ContextRefreshedEvent>{
         bbb.getAuthors().add(nick);
         authorRepository.save(elaine);
         bookRepository.save(bbb);
-
     }
 }

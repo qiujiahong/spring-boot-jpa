@@ -9,6 +9,7 @@
     <modules>
         <module>jpa-1</module>
         <module>jpa-one-to-one</module>
+        <module>jpa-one-to-many</module>
         <module>jpa-many-to-many</module>
     </modules>
 
