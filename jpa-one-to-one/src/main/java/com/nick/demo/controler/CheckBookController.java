@@ -1,9 +1,7 @@
 package com.nick.demo.controler;
 
-import com.nick.demo.common.CharacterUtils;
-import com.nick.demo.domain.Author;
 import com.nick.demo.domain.Book;
-import com.nick.demo.repository.AuthorRepository;
+import com.nick.demo.repository.BookDetailRepository;
 import com.nick.demo.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +17,7 @@ public class CheckBookController {
     @Autowired
     private BookRepository bookRepository;
     @Autowired
-    private AuthorRepository authorRepository;
+    private BookDetailRepository authorRepository;
 
 
     /**
@@ -40,17 +38,18 @@ public class CheckBookController {
 
     @GetMapping(path="new")
     public @ResponseBody Book newBook(){
-        Author author = new Author();
-        author.setEmail(CharacterUtils.getRandomString(15));
-        author.setName(CharacterUtils.getRandomString(5));
-        author.setPhone(CharacterUtils.getRandomString(10));
-        authorRepository.save(author);
-        Book book = new Book();
-        book.setIsbn("isbn:"+CharacterUtils.getRandomString(5));
-        book.setName("helo");
-        book.setAuthor(author);
-        bookRepository.save(book);
-        return book;
+//        BookDetail author = new BookDetail();
+//        author.setEmail(CharacterUtils.getRandomString(15));
+//        author.setName(CharacterUtils.getRandomString(5));
+//        author.setPhone(CharacterUtils.getRandomString(10));
+//        authorRepository.save(author);
+//        Book book = new Book();
+//        book.setIsbn("isbn:"+CharacterUtils.getRandomString(5));
+//        book.setName("helo");
+//        book.setAuthor(author);
+//        bookRepository.save(book);
+//        return book;
+        return null;
     }
     @GetMapping(path="/all")
     public @ResponseBody Iterable<Book> getAllBooks(){

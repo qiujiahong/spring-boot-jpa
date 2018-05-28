@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Book {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -22,7 +22,23 @@ public class Book {
     private String isbn;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "author_id")
-    private Author author;
+    @JoinColumn(name = "book_detail_id")
+//    @Lazy(false)
+    private BookDetail bookDetail;
 
+    public Book(String name, String isbn, BookDetail bookDetail) {
+        this.name = name;
+        this.isbn = isbn;
+        this.bookDetail = bookDetail;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", bookDetail=" + bookDetail +
+                '}';
+    }
 }
